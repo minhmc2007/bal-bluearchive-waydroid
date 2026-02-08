@@ -1,0 +1,16 @@
+post_install() {
+    echo "------------------------------------------------------------------"
+    echo "  Package installed successfully."
+    echo "  "
+    echo "  IMPORTANT: To finish the setup (Install Waydroid, GApps,"
+    echo "  Libhoudini, and Blue Archive), you MUST run the following"
+    echo "  command in your terminal:"
+    echo "  "
+    echo "      ba-setup"
+    echo "  "
+    echo "------------------------------------------------------------------"
+}
+
+post_upgrade() {
+    post_install
+}
